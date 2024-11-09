@@ -1,0 +1,492 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    line-height: 1.6;
+    font-family: Arial, sans-serif;
+    background-color: #333;
+  }
+  
+  nav {
+    background-color:#1b1d1d ;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.8s ease; /* Smooth transition */
+  }
+  
+  
+  .logo {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 26px;
+    color: greenyellow;
+  }
+  
+  .nav-link  {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-link li {
+    margin: 0 1rem;
+  }
+  
+  .nav-link a {
+    color: #eeebeb;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  .nav-link a:hover {
+    counter-reset: grey;
+  }
+  
+  #profile{
+    background: radial-gradient(circle, rgb(35, 35, 35) 0%, rgb(40, 40, 41) 100%);
+     height: 100vh;
+     display: flex;
+     justify-content: center;
+     text-align: center;
+     align-items: center;
+     color: rgb(248, 245, 245);
+  }
+  
+
+.profile-content h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3rem;
+}
+  
+  .profile-content h2 {
+    font-size: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  .profile-content h4{
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  .profile-content img {
+    width: 250px;
+    border-radius: 50%;
+  }
+  .profile-content p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(88, 88, 88);
+    font-size: 20px;
+}
+  
+  button {
+    background-color:#386a97;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 0.7rem 1.7rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  button:hover {
+    background-color: greenyellow;
+    color:#1b1d1d;
+    border-radius: 20px;
+  }
+  
+  #education {
+    background-color: #333;
+    padding: 50px;
+  }
+  
+  #education h2{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: greenyellow;
+  }
+  
+  .education-card {
+    background: rgb(30, 30, 31);
+    border:#ddd;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.304);
+  }
+  
+  .education-card h3 {
+    font-size: 1.8rem;
+    color: #386a97;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+  }
+  
+  .education-card p {
+    font-size: 1.1rem;
+    color: rgb(80, 84, 93);;
+    margin: o 5px;
+  }
+  
+  .education-card strong {
+    color:#9eadad;
+  }
+  
+  #contact {
+    background-color: #333;
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  #contact h2 {
+    font-size: 36px;
+    color: yellowgreen;
+    margin-bottom: 20px;
+  }
+  
+  #contact p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #386a97;
+  }
+  
+  div.contact-card {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgb(30, 30, 31);
+    box-shadow: 0 4px 8px rgba(0, 0, 0.1);
+    border: 2px solid #ddd;
+    border-radius: 20px; /* adds a curve to the card */
+  }
+  
+  .group-form {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .group-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #eaedef;
+  }
+  
+  .group-form input,
+  .group-form text area {
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 16px;
+    font-size: 16px;
+  }
+
+/* Project Styling */
+  
+  #project-section {
+    padding: 2rem;
+    color: #386a97;
+    text-align:center;
+  }
+  
+  
+  #project h2 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: yellowgreen;
+  }
+  
+  /* Project Card Styling */
+
+
+  .project-card {
+    background-color: #2c2c2c;
+    border: 10px solid #333;
+    padding: 1rem;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-radius: 8px;
+}
+  .group-card {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap:wrap;
+  
+  }
+  
+  .project-card {
+    background-color: #2c2c2c;
+    border: 1px solid #333;
+    position: relative;
+    height: 200px;
+    width: 380px;
+    margin: 50px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  .project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  .project-card:hover .project-image img {
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+  }
+  
+  .project-description {
+    position: absolute;
+    top: 0%;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: left 0.3s ease;
+  }
+  
+  .project-description h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #ffdd77;
+  }
+  
+  .project-description p {
+    margin: 10px 0;
+    padding: 0 20px;
+    font-size: 1em;
+  }
+  
+  .project-card:hover .project-description {
+    left: 0;
+  }
+  
+  .view-botton {
+    text-decoration: none;
+    color: #fff;
+    background-color: #ff704d;
+    padding: 7px 9px;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+  }
+  
+  .view-botton:hover{
+    background-color: #4a4a4a;
+    color: #ddd;
+  }
+  
+  #blog {
+    padding: 50px 0;
+    background-color: #1d1d1d;
+    text-align: center;
+  }
+  
+  #blog h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color:yellowgreen;
+  }
+  
+  .scroll-container {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 20px;
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    scrollbar-color: #ff5733 transparent;
+  }
+  
+  .scroll-container::-webkit-scrollbar {
+    height: 8px;
+  }
+  
+  .scroll-container::-webkit-scrollbar-thumb {
+    background-color: #ff5733;
+    border-radius: 10px;
+  }
+  
+  .scroll-container::-webkit-scrollbar-track {
+    background-color: #f9f9f9;
+  }
+  
+  div.blog-card {
+    min-width: 300px;
+    background-color:#121212;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .blog-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .blog-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .blog-card h3 {
+    margin: 20px 0 10px;
+    font-size: 1.5em;
+    color: #ffffff;
+  }
+  
+  .blog-card p {
+    padding: 0 20px;
+    font-size: 1em;
+    color: #efefef;
+  }
+  
+  .read-more {
+    text-decoration: none;
+    color: #fff;
+    background-color: #ff5733;
+    padding: 10px 20px;
+    margin: 20px;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+  }
+  
+  .read-more:hover {
+    background-color: #707070;
+  }
+  
+  footer {
+    text-align: center; /* Centers all content inside the footer */
+    padding: 20px;
+    background-color:#121212; /* Optional: Light background for the footer */
+  }
+  
+  footer h3 {
+    margin-bottom: 10px; /* Adds space between the heading and icons */
+    color: white;
+  }
+  
+  .social-links {
+    display: flex;
+    justify-content: center; /* Centers the icons */
+    gap: 15px; /* Space between icons */
+    margin-top: 10px;
+  }
+  
+  .social-links a {
+    color:wheat;
+    font-size: 30px; /* Adjust icon size as needed */
+    transition: color 0.3s;
+    text-decoration: none; /* Removes underline from links */
+  }
+  
+  .social-links a:hover {
+    color: #555; /* Default hover color */
+  }
+  
+  /* Specific colors for each platform on hover */
+  .social-links a[aria-label="Instagram"]:hover {
+    color: #C13584; /* Instagram color */
+  }
+  
+  .social-links a[aria-label="LinkedIn"]:hover {
+    color: #0077b5; /* LinkedIn color */
+  }
+  
+  .social-links a[aria-label="Facebook"]:hover {
+    color: #1877f2; /* Facebook color */
+  }
+  /*Skill Section styling */
+
+  .skill-section {
+    padding: 2rem;
+    text-align: center;
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    max-width: 600px;
+    width: 100%;
+    margin: auto; /* Center horizontally */
+}
+  
+  .skill-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 1.5rem;
+    color: greenyellow;
+    text-align: center;
+  }
+  
+  .skill-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .skill-card {
+    background: #fff;
+    border-radius: 50px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 150px;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .skill-card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .skill-icon img {
+    width: 50px;
+    margin-bottom: 10px;
+  }
+  
+  div.skill-bar {
+    background-color: #333;
+    border-radius: 5px;
+    
+    width: 100%;
+    position: relative;
+  }
+  
+  div.skill-level {
+    background-color: #64b5f6;
+    color: #121212;
+    padding: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-align: left;
+    display:flexbox;
+  }
+  
+  .html-level {
+    width: 90%; /* Adjust this percentage based on skill */
+  }
+  
+  .css-level {
+    width: 80%; /* Adjust this percentage based on skill */
+  }
+  
+  div.contact-card {
+    width: 1000px;
+    height: 360px;
+  }
+  input#message {
+    background-color:white;
+    padding: 30px;
+  }
